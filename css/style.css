@@ -1,5 +1,6 @@
 :root{
     --color-principal: #f43543;
+    --color-white: #ffffff;
 }
 
 *{
@@ -36,8 +37,32 @@ body{
     position: absolute;
     width: 80%;
     height: 120%;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     z-index: -1;
     top: -10%;
     left: 10%;
+}
+
+.container p {
+    color: #fdd8d8;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.container h3 {
+    color: var(--color-white);
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.container button{
+    background-color: var(--color-white);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-principal);
+    cursor: pointer;
 }
